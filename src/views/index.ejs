@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conveyor</title>
+  <meta name="viewport" content="initial-scale=1,width=device-width">
+</head>
+<body>
+  <h1>Hitungan Barang</h1>
+  <% goods.forEach(function (good) { %>
+    <div class="color-<%= good.color %>">
+      Warna: <%= good.color %>. Jumlah <span class="count"><%= good.count %></span>
+    </div>
+  <% }) %>
+  <script src="/js/socket.io.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
